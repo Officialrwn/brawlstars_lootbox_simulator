@@ -10,7 +10,7 @@ namespace Lootbox_simulator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Github first commit test");
+            Console.WriteLine("2nd commit testing changes");
         }
     }
 }
