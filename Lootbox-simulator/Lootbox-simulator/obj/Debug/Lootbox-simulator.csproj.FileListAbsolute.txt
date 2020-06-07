@@ -1,0 +1,6 @@
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\bin\Debug\Lootbox-simulator.exe.config
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\bin\Debug\Lootbox-simulator.exe
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\bin\Debug\Lootbox-simulator.pdb
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\obj\Debug\Lootbox-simulator.csprojResolveAssemblyReference.cache
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\obj\Debug\Lootbox-simulator.exe
+C:\Users\Leo Tran\Lootbox\lootbox_project\Lootbox-simulator\Lootbox-simulator\obj\Debug\Lootbox-simulator.pdb
