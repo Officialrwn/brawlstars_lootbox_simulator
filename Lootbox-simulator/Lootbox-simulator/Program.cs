@@ -11,7 +11,7 @@ namespace Lootbox_simulator
     {
         static void Main(string[] args)
         {
-            var myAcc = new OpenBox();
+            var myAcc = new BoxTypes();
 
             Console.WriteLine("Press enter to get random brawler from list or type exit to stop program");
             var isTrue = true;
