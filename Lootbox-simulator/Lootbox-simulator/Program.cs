@@ -20,7 +20,7 @@ namespace Lootbox_simulator
                 var input = Console.ReadLine().ToLower();
                 if (input != "exit")
                 {
-                    myAcc.Open();
+                    myAcc.Brawler();
                 }
                 else isTrue = false;
             } while (isTrue);

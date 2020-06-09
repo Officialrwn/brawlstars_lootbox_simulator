@@ -9,44 +9,25 @@ namespace Lootbox_simulator
 {
     public class Rewards
     {
-        private Random rng = new Random();
-        private List<string> epicBrawlers = new List<string>() { "Piper", "Pam", "Frank", "Bibi", "Bea", "Nani" };
-        public List<string> myBrawlers = new List<string>() { "Shelly", "Nita", "Colt", "Bull", "Jessie", "Brock" };
-        public bool isEpic;
+        private int count = 1;
 
-        public int Gold(int a, int b)
+        public void Gold(int a)
         {
-            return rng.Next(a, b);
+            Console.WriteLine("6 rewards unlocked! Box nr: " + count++);
+            Console.WriteLine("Gold reward: " + a);
         }
 
-        public void PowerPoints(List<string> list)
+        public void PowerPoints(int a, string brawler)
         {
-            var rngBrawler = list[rng.Next(list.Count)];
-            Console.WriteLine("{0} Powerpoints for {1}", rng.Next(10, 50), rngBrawler);
-            list.Remove(rngBrawler);
+            Console.WriteLine("{0} Powerpoints for {1}",a, brawler);
         }
 
-        public void Epic()
+        public void Brawler(string tier, string brawler)
         {
-            //if (epicBrawlers.Count != 0)
-            //{
-            //    RandomGenerator.RngIndex(epicBrawlers);
-
-            //    Console.WriteLine("******************************");
-            //    Console.WriteLine("Unlocked Epic Brawler: {0}", RandomGenerator.rngBrawler);
-            //    Console.WriteLine("******************************");
-            //    myBrawlers.Add(RandomGenerator.rngBrawler);
-            //    epicBrawlers.Remove(RandomGenerator.rngBrawler);
-            //    Console.WriteLine();
-
-            //    //Console.WriteLine("Current Brawlers in list:");
-            //    //myBrawlers.ForEach(Console.WriteLine);
-            //    //Console.WriteLine();
-            //}
-            //else
-            //{
-            //    isEpic = true;
-            //}
+            Console.WriteLine("******************************");
+            Console.WriteLine("Unlocked {0} Brawler: {1}",tier, brawler);
+            Console.WriteLine("******************************");
+            
         }
     }
 }
