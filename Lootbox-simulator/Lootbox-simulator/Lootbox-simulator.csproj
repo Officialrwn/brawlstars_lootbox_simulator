@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrawlerCollection.cs" />
     <Compile Include="Rewards.cs" />
     <Compile Include="BoxTypes.cs" />
     <Compile Include="Program.cs" />
