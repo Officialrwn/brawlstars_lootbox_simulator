@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace Lootbox_simulator
 {
-    public class Rewards
+    public class Reward
     {
         private int count = 1;
 

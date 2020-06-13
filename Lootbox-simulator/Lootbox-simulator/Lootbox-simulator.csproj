@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
     <Compile Include="BrawlerCollection.cs" />
-    <Compile Include="Rewards.cs" />
-    <Compile Include="BoxTypes.cs" />
+    <Compile Include="Brawlers.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Reward.cs" />
+    <Compile Include="BoxType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

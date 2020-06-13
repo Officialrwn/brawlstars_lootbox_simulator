@@ -8,18 +8,32 @@ namespace Lootbox_simulator
 {
     public class BrawlerCollection
     {
-        public IReadOnlyCollection<string> StartBrawlers => startBrawlers.AsReadOnly();
-        public IReadOnlyCollection<string> EpicBrawler => epicBrawlers.AsReadOnly();
-
-        private List<string> startBrawlers = new List<string>()
+        private List<Brawlers> BrawlerList()
         {
-            "Shelly", "Nita", "Colt", "Bull", "Jessie", "Brock"
-        };
+            return new List<Brawlers>
+            {
+                new Brawlers() {Name = "Shelly", Tier = "Start"},
+                new Brawlers() {Name = "Nita", Tier = "Start"},
+                new Brawlers() {Name = "Colt", Tier = "Start"},
+                new Brawlers() {Name = "Bull", Tier = "Start"},
+                new Brawlers() {Name = "Jessie", Tier = "Start"},
+                new Brawlers() {Name = "Brock", Tier = "Start"},
 
-        private List<string> epicBrawlers = new List<string>()
+                new Brawlers() {Name = "Piper", Tier = "Rare"},
+                new Brawlers() {Name = "Pam", Tier = "Rare"},
+                new Brawlers() {Name = "Frank", Tier = "Rare"}
+            };
+        }
+
+        public void CopyBrawlerList(List<string> list, string tier) // return brawler list based on tier
         {
-            "Piper", "Pam", "Frank", "Bibi", "Bea", "Nani"
-        };
+           BrawlerList()
+                .FindAll(b => b.Tier == tier)
+                .ForEach((b) => list.Add(b.Name));
+        }
 
+        //var bufferList = new List<string>();
+
+        //brawlList.GetBrawlerList("Start").ForEach((brawler) => bufferList.Add(brawler.Name));
     }
 }
