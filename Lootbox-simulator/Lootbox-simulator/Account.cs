@@ -10,14 +10,13 @@ namespace Lootbox_simulator
 {
     public class Account
     {
-        
         BrawlerCollection Brawlers = new BrawlerCollection();
         List<string> _myBrawlers = new List<string>();
-        BoxType open = new BoxType();
-       
+        Box open = new Box();
+ 
         public Account()
         {
-            Brawlers.CopyBrawlerList(_myBrawlers, "Start");
+            Brawlers.GetStartBrawlers(_myBrawlers);
         }
 
         public ReadOnlyCollection<string> MyBrawlers
@@ -30,7 +29,7 @@ namespace Lootbox_simulator
 
         public void OpenBox()
         {
-            open.Test(_myBrawlers);
+            open.MegaBox(_myBrawlers);
         }
     }
 }

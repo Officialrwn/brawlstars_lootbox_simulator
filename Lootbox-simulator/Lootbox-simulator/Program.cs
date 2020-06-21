@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using Lootbox_simulator.Extensions;
+
 
 namespace Lootbox_simulator
 {
@@ -12,9 +14,6 @@ namespace Lootbox_simulator
         
         static void Main(string[] args)
         {
-            // Create seperate class for user accounts (make user account create new list thats only readable with  starter brawlers).
-          
-
             var myAcc = new Account();
 
             Console.WriteLine("Press enter to get random brawler from list or type exit to stop program");
@@ -25,7 +24,8 @@ namespace Lootbox_simulator
                 if (input != "exit")
                 {
                     myAcc.OpenBox();
-                    new List<string>(myAcc.MyBrawlers).ForEach(b => Console.WriteLine(b));
+                    Console.WriteLine("\nMy brawlers:\n");
+                    myAcc.MyBrawlers.ForEach(b => Console.WriteLine(b));
                 }
                 else isRunning = false;
             } while (isRunning);

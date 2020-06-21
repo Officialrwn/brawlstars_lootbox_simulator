@@ -10,6 +10,7 @@ namespace Lootbox_simulator
     public class Brawlers
     {
         public string Name;
-        public string Tier;
+        public double Tier;
+        public bool IsEmpty;
     }
 }
