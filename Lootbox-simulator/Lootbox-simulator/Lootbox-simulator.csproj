@@ -46,8 +46,7 @@
     <Compile Include="BrawlerCollection.cs" />
     <Compile Include="Brawlers.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
-    <Compile Include="Reward.cs" />
-    <Compile Include="Box.cs" />
+    <Compile Include="RewardCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

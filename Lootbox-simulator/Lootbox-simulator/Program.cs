@@ -11,13 +11,13 @@ namespace Lootbox_simulator
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
             var myAcc = new Account();
+            var isRunning = true;
 
             Console.WriteLine("Press enter to get random brawler from list or type exit to stop program");
-            var isRunning = true;
+
             do
             {
                 var input = Console.ReadLine().ToLower();

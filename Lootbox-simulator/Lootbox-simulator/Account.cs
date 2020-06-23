@@ -11,9 +11,10 @@ namespace Lootbox_simulator
     public class Account
     {
         BrawlerCollection Brawlers = new BrawlerCollection();
+        RewardCollection reward = new RewardCollection();
+
         List<string> _myBrawlers = new List<string>();
-        Box open = new Box();
- 
+
         public Account()
         {
             Brawlers.GetStartBrawlers(_myBrawlers);
@@ -29,7 +30,7 @@ namespace Lootbox_simulator
 
         public void OpenBox()
         {
-            open.MegaBox(_myBrawlers);
+            reward.MegaBox(_myBrawlers);
         }
     }
 }
